@@ -7,3 +7,20 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+pets = [
+  {
+    name: "Garfield",
+    address: "Toulouse",
+    species: "cat",
+    found_at: Date.current - 7.days
+  },
+  {
+    name: "Rémi",
+    address: "Paris",
+    species: "rat",
+    found_at: Date.current - 4.days
+  }
+]
+
+Pet.create(pets)
